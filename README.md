@@ -35,6 +35,7 @@ Antes de instalar e usar o Checkstyle, verifique se você possui os seguintes pr
 6. No menu lateral, selecione `Tools` > `Checkstyle`.
 7. Clique em `+` para adicionar uma nova configuração e selecione o arquivo de configuração (ex: `google_checks.xml` ou `sun_checks.xml`).
 8. Defina essa configuração como "Default".
+9. Observação: Pode também ser resgatado o arquivo de regras do Google [clicando aqui](https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml).
 
 ## Verificação de Código com Checkstyle
 
