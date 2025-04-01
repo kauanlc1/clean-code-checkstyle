@@ -10,8 +10,9 @@
 - [Verificação de Código com Checkstyle](#verificação-de-código-com-checkstyle)
 - [Configuração das Regras de Estilo](#configuração-das-regras-de-estilo)
 - [💻 Exemplo de Código a Ser Estilizado](#-exemplo-de-código-a-ser-estilizado)
+- [📜 Relatório de Erros do Checkstyle](#-relatório-de-erros-do-checkstyle)
+- [🔧 Regras de Estilo Comuns](#-regras-de-estilo-comuns)
 - [📜 Conclusão](#-conclusão)
-
 ## Sobre o Linter
 
 **Checkstyle** é uma ferramenta de análise estática para código Java que verifica se o código está em conformidade com convenções de estilo de codificação predefinidas. Ele é amplamente usado para garantir que o código seja limpo, padronizado, legível e de fácil manutenção.
@@ -82,6 +83,35 @@ public class Exemplo {
     }
 }
 ```
+
+## 📜 Relatório de Erros do Checkstyle
+
+Quando o Checkstyle encontra violações de estilo em seu código, ele gera um relatório como o seguinte:
+
+```plaintext
+Falta o comentário Javadoc. (1:1) [MissingJavadocType] <Estilo default>
+Type name 'testes' must match pattern '^[A-Z][a-zA-Z0-9]*$'. (1:14) [TypeName] <Estilo default>
+'method def modifier' tem um nível de indentação incorreto de 7. O nível esperado era o 2. (2:8) [Indentation] <Estilo default>
+Falta o comentário Javadoc. (2:8) [MissingJavadocMethod] <Estilo default>
+O filho de 'method def' está no nível de indentação incorreto de 8. O nível esperado era o 4. (3:9) [Indentation] <Estilo default>
+'method def rcurly' tem um nível de indentação incorreto de 9. O nível esperado era o 2. (4:10) [Indentation] <Estilo default>
+```
+
+Esse relatório indica as seguintes violações:
+
+Falta de comentário Javadoc: O Checkstyle encontrou um tipo e método sem documentação Javadoc.
+
+Nome do tipo (classe) não segue a convenção: O nome da classe testes deve começar com uma letra maiúscula (padrão: ^[A-Z][a-zA-Z0-9]*$).
+
+Indentação incorreta: O Checkstyle apontou problemas de indentação, onde o código não está alinhado corretamente de acordo com as convenções.
+
+## 🔧 Regras de Estilo Comuns
+- Comprimento da linha: Garantir que as linhas de código não ultrapassem um determinado número de caracteres.
+
+- Nomenclatura de variáveis: Garantir que variáveis e métodos sigam um padrão de nomenclatura (como camelCase para variáveis e métodos).
+
+- Espaçamento: Certificar-se de que há espaços apropriados ao redor de operadores e vírgulas.
+
 
 ## 📜 Conclusão
 
