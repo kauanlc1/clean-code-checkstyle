@@ -63,22 +63,24 @@ Você pode utilizar arquivos de configuração padrões (como o `google_checks.x
 ## 💻 Exemplo de Código a Ser Estilizado
 
 ### Código Não Formatado
-java
+```java
 public class Exemplo {
 public static void main(String[] args) {
 System.out.println("Olá, mundo!");
 }
 }
+```
 
 
 ### Código Após Estilização com Checkstyle
-java
+
+```java
 public class Exemplo {
     public static void main(String[] args) {
         System.out.println("Olá, mundo!");
     }
 }
-
+```
 
 ## 📜 Conclusão
 
