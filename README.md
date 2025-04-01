@@ -99,11 +99,11 @@ O filho de 'method def' está no nível de indentação incorreto de 8. O nível
 
 Esse relatório indica as seguintes violações:
 
-Falta de comentário Javadoc: O Checkstyle encontrou um tipo e método sem documentação Javadoc.
+- Falta de comentário Javadoc: O Checkstyle encontrou um tipo e método sem documentação Javadoc.
 
-Nome do tipo (classe) não segue a convenção: O nome da classe testes deve começar com uma letra maiúscula (padrão: ^[A-Z][a-zA-Z0-9]*$).
+- Nome do tipo (classe) não segue a convenção: O nome da classe testes deve começar com uma letra maiúscula (padrão: ^[A-Z][a-zA-Z0-9]*$).
 
-Indentação incorreta: O Checkstyle apontou problemas de indentação, onde o código não está alinhado corretamente de acordo com as convenções.
+- Indentação incorreta: O Checkstyle apontou problemas de indentação, onde o código não está alinhado corretamente de acordo com as convenções.
 
 ## 🔧 Regras de Estilo Comuns
 - Comprimento da linha: Garantir que as linhas de código não ultrapassem um determinado número de caracteres.
