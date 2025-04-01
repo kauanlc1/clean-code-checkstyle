@@ -58,3 +58,28 @@ Você pode utilizar arquivos de configuração padrões (como o `google_checks.x
     </module>
     <module name="FinalNewline"/>
 </module>
+```
+
+## 💻 Exemplo de Código a Ser Estilizado
+
+### Código Não Formatado
+java
+public class Exemplo {
+public static void main(String[] args) {
+System.out.println("Olá, mundo!");
+}
+}
+
+
+### Código Após Estilização com Checkstyle
+java
+public class Exemplo {
+    public static void main(String[] args) {
+        System.out.println("Olá, mundo!");
+    }
+}
+
+
+## 📜 Conclusão
+
+O Checkstyle é uma ferramenta essencial para desenvolvedores Java que desejam manter um código limpo, consistente e em conformidade com boas práticas de desenvolvimento. Com integração fácil ao IntelliJ IDEA, ele permite a aplicação automatizada de regras de estilo, promovendo legibilidade e manutenção no longo prazo.
