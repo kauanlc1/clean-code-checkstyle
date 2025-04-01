@@ -12,6 +12,7 @@
 - [💻 Exemplo de Código a Ser Estilizado](#-exemplo-de-código-a-ser-estilizado)
 - [📜 Relatório de Erros do Checkstyle](#-relatório-de-erros-do-checkstyle)
 - [🔧 Regras de Estilo Comuns](#-regras-de-estilo-comuns)
+- [Suprimindo Regras do Checkstyle com `@SuppressWarnings("checkstyle")`](#-suprimindo-regras-do-checkstyle-com-suppresswarningscheckstyle)
 - [📜 Conclusão](#-conclusão)
 ## Sobre o Linter
 
@@ -111,6 +112,25 @@ Esse relatório indica as seguintes violações:
 - Nomenclatura de variáveis: Garantir que variáveis e métodos sigam um padrão de nomenclatura (como camelCase para variáveis e métodos).
 
 - Espaçamento: Certificar-se de que há espaços apropriados ao redor de operadores e vírgulas.
+
+## 📜 Suprimindo Regras do Checkstyle com `@SuppressWarnings("checkstyle")`
+
+Em alguns casos, você pode precisar ignorar uma ou mais violações específicas do Checkstyle, sem precisar alterar as regras no arquivo de configuração. Para isso, o Checkstyle permite o uso da anotação `@SuppressWarnings("checkstyle:regra")` para suprimir avisos de determinadas regras.
+
+### Exemplo de Uso
+
+Imagine que você tenha uma linha de código muito longa que ultrapassa o limite de comprimento de linha definido no Checkstyle, mas você deseja manter essa linha sem modificações. Para suprimir a violação dessa regra, você pode usar a anotação `@SuppressWarnings("checkstyle:LineLength")` como mostrado no exemplo abaixo:
+
+```java
+public class Exemplo {
+
+    @SuppressWarnings("checkstyle:LineLength")
+    public void exemploDeMetodo() {
+        // Esta linha de código é longa, mas queremos ignorar a regra de comprimento de linha do Checkstyle
+        String exemplo = "Este é um exemplo de linha de código extremamente longa que normalmente excederia o limite de comprimento de linha definido pelo Checkstyle.";
+    }
+}
+```
 
 
 ## 📜 Conclusão
