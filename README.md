@@ -24,7 +24,7 @@
 
 Antes de instalar e usar o Checkstyle, verifique se você possui os seguintes pré-requisitos:
 
-- JDK 8 ou superior instalado
+- JDK instalado (8 ou superior recomendado)
 - IntelliJ IDEA instalado
 
 ### Configuração Inicial no IntelliJ IDEA
